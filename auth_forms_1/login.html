@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<script src="assets/js/scripts.js"></script>
+<body>
+<div class="container">
+    <div class="left-side">
+        <h2>Welcome to your business</h2>
+        <p>Please enter your credentials to get access to your account</p>
+    </div>
+    <div class="right-side">
+        <div class="nav-links">
+            <a href="login.html" class="login-link">Login</a>
+            <a href="register.html" class="register-link">Register</a>
+        </div>
+        <h1 class="form-title">Login</h1>
+        <form action="#" method="post">
+            <div class="input-icon-container">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="input-icon-container password-container">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" id="pass" placeholder="Password">
+                <i class="far fa-eye-slash password-toggle"></i>
+            </div>
+            <div class="other-options">
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <div><a href="#">Forgot your password?</a></div>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</div>
+</body>
+</html>

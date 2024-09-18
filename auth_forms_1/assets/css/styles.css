@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../img/bg.png") no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    color: #ffffff;
+    margin: 100px auto 0;
+    position: relative;
+    width: 800px;
+    display: flex;
+    border-radius: 20px;
+    animation: shadow 1s ease forwards;
+}
+
+.left-side,
+.right-side {
+    width: 50%;
+    padding: 10px 45px 50px;
+    backdrop-filter: blur(8px);
+    position: relative;
+}
+
+.left-side {
+    background: linear-gradient(to bottom, rgba(22, 69, 94, 0.9), rgba(85, 139, 166, 0.9), rgba(225, 154, 96, 0.9), rgba(255, 73, 73, 0.9));
+    animation: slideOut 1s ease;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.right-side {
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.left-side > * {
+    position: relative;
+    top: 35%;
+    text-align: center;
+    padding: 5px 40px;
+}
+
+h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 255, 255, 0.9);
+}
+
+.form-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 110px 0 30px;
+}
+
+.input-icon-container,
+.password-container {
+    position: relative;
+    margin-top: 30px;
+}
+
+.input-icon-container i,
+.password-container i.password-toggle {
+    position: absolute;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.input-icon-container i {
+    left: 0;
+    top: 30px;
+    transform: translateY(-50%);
+}
+
+.password-container i.password-toggle {
+    right: -93%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+input[type="email"],
+input[type="text"],
+input[name="password"],
+input[name="password_confirm"] {
+    width: 100%;
+    padding: 20px 35px 20px 40px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+input[type="submit"] {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.nav-links {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.nav-links a {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.nav-links a.inactive {
+    border-bottom: none;
+}
+
+.nav-links a.inactive:hover {
+    color: #ffffff;
+}
+
+.nav-links a.active {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+
+.other-options {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.other-options label,
+.other-options a, a {
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+input[id="remember"] {
+    margin: 0;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.social i {
+    padding: 0 10px;
+}
+
+@keyframes slideOut {
+    0% {
+        border-radius: 20px;
+        left: 50%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes shadow {
+    0%, 95% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+}
