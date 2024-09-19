@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(to right, #fd36be, #830df1, #460df1);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #222121;
+    border-radius: 10px;
+    color: #ffffff;
+    margin: 100px auto 0;
+    padding: 10px 40px 40px;
+    position: relative;
+    width: 400px;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 25px 0 40px;
+    text-align: center;
+}
+
+.name-fields {
+    position: relative;
+    height: 50px;
+}
+
+.first-name-container,
+.last-name-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.first-name-container {
+    left: 0;
+    width: 48%;
+}
+
+.last-name-container {
+    right: 0;
+    width: 48%;
+}
+
+.input-icon-container {
+    position: relative;
+    margin-top: 40px;
+}
+
+.input-icon-container i {
+    position: absolute;
+    left: 15px;
+    top: 28px;
+    transform: translateY(-50%);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: #373636;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding-left: 45px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input::placeholder, a,
+.input-icon-container i, span {
+    font-size: 16px;
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    font-size: 16px;
+    background: linear-gradient(to right, #fd36be, #830df1, #460df1);
+    color: white;
+    border: none;
+    padding: 10px 70px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+span {
+    padding: 0 5px;
+}
