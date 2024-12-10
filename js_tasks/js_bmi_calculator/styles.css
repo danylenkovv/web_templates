@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.bmi-category {
+    display: inline-block;
+    margin: 20px;
+}
+
+.bmi-category h3 {
+    margin-top: 20px;
+}
+
+.bmi-category p {
+    font-size: 14px;
+}
+
+.figure {
+    position: relative;
+    width: 80px;
+    height: 180px;
+}
+
+.figure .head {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.figure .body {
+    height: 90px;
+    margin: 5px auto 0;
+    border-radius: 50px;
+    position: relative;
+}
+
+.figure .arms {
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    right: -15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.figure .arm {
+    width: 10px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.figure .legs {
+    display: flex;
+    justify-content: center;
+}
+
+.figure .leg {
+    width: 10px;
+    height: 50px;
+    margin: 0 5px;
+    border-radius: 20px;
+}
+
+.figure .upper-curve, .figure .lower-curve {
+    position: absolute;
+    z-index: -1;
+}
+
+.figure .head, .figure .body, .figure .arm, .figure .leg, .figure .upper-curve, .figure .lower-curve {
+    background-color: #97C33D;
+}
+
+.figure .upper-curve {
+    height: 25px;
+    border-radius: 50% 50% 0 0;
+}
+
+.figure .lower-curve {
+    height: 45px;
+    border-radius: 0 0 50px 50px;
+}
+
+/* Underweight */
+.figure.underweight .body {
+    width: 25px;
+}
+
+.figure.underweight .upper-curve {
+    width: 49px;
+    left: -12px;
+}
+
+.figure.underweight .lower-curve {
+    width: 25px;
+    left: 27px;
+    bottom: 35px;
+}
+
+.figure.underweight .arms {
+    left: -12px;
+    right: -12px;
+}
+
+.figure.underweight .leg, .figure.underweight .arm {
+    width: 7px;
+}
+
+/* Healthy */
+.figure.healthy .body {
+    width: 35px;
+}
+
+.figure.healthy .upper-curve {
+    width: 65px;
+    left: -15px;
+}
+
+.figure.healthy .lower-curve {
+    width: 35px;
+    left: 23px;
+    bottom: 35px;
+}
+
+/* Overweight */
+.figure.overweight .body {
+    width: 50px;
+}
+
+.figure.overweight .upper-curve {
+    width: 80px;
+    left: -15px;
+}
+
+.figure.overweight .lower-curve {
+    width: 50px;
+    left: 15px;
+    bottom: 35px;
+}
+
+.figure.overweight .leg, .figure.overweight .arm {
+    width: 12px;
+}
+
+/* Obese */
+.figure.obese .body {
+    width: 75px;
+}
+
+.figure.obese .upper-curve {
+    width: 111px;
+    left: -18px;
+}
+
+.figure.obese .lower-curve {
+    width: 75px;
+    left: 2px;
+    bottom: 35px;
+}
+
+.figure.obese .arm, .figure.obese .leg {
+    width: 15px;
+}
+
+.figure.obese .arms {
+    left: -18px;
+    right: -18px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.d-none {
+    display: none;
+}
+
+.figure.highlight .head,
+.figure.highlight .body,
+.figure.highlight .arm,
+.figure.highlight .leg,
+.figure.highlight .upper-curve,
+.figure.highlight .lower-curve {
+    background-color: #ff0000;
+}

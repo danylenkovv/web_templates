@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">BMI Calculator</h1>
+    <form class="bmi-form">
+        <div class="form-group">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" class="form-control height-input" required>
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" class="form-control weight-input" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Calculate BMI</button>
+    </form>
+    <div class="result-container d-none mt-4">
+        <p class="bmi-result h3"></p>
+        <div class="bmi-figures">
+            <div class="bmi-category">
+                <div class="figure underweight">
+                    <div class="head"></div>
+                    <div class="body">
+                        <div class="upper-curve"></div>
+                        <div class="arms">
+                            <div class="arm"></div>
+                            <div class="arm"></div>
+                        </div>
+                    </div>
+                    <div class="legs">
+                        <div class="lower-curve"></div>
+                        <div class="leg"></div>
+                        <div class="leg"></div>
+                    </div>
+                </div>
+                <h3>Underweight</h3>
+                <p>≤18.5</p>
+            </div>
+            <div class="bmi-category">
+                <div class="figure healthy">
+                    <div class="head"></div>
+                    <div class="body">
+                        <div class="upper-curve"></div>
+                        <div class="arms">
+                            <div class="arm"></div>
+                            <div class="arm"></div>
+                        </div>
+                    </div>
+                    <div class="legs">
+                        <div class="lower-curve"></div>
+                        <div class="leg"></div>
+                        <div class="leg"></div>
+                    </div>
+                </div>
+                <h3>Healthy</h3>
+                <p>18.5-24.9</p>
+            </div>
+            <div class="bmi-category">
+                <div class="figure overweight">
+                    <div class="head"></div>
+                    <div class="body">
+                        <div class="upper-curve"></div>
+                        <div class="arms">
+                            <div class="arm"></div>
+                            <div class="arm"></div>
+                        </div>
+                    </div>
+                    <div class="legs">
+                        <div class="lower-curve"></div>
+                        <div class="leg"></div>
+                        <div class="leg"></div>
+                    </div>
+                </div>
+                <h3>Overweight</h3>
+                <p>25-29.9</p>
+            </div>
+            <div class="bmi-category">
+                <div class="figure obese">
+                    <div class="head"></div>
+                    <div class="body">
+                        <div class="upper-curve"></div>
+                        <div class="arms">
+                            <div class="arm"></div>
+                            <div class="arm"></div>
+                        </div>
+                    </div>
+                    <div class="legs">
+                        <div class="lower-curve"></div>
+                        <div class="leg"></div>
+                        <div class="leg"></div>
+                    </div>
+                </div>
+                <h3>Obese</h3>
+                <p>30+</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
