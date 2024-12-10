@@ -1,0 +1,134 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Amatic SC", sans-serif
+}
+
+.w3-col {
+    background-color: black;
+}
+
+.w3-button:hover {
+    color: #fff !important;
+    background-color: #cb6767 !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w3-bar-item {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/pizza_home.png");
+}
+
+.bgimgpizza {
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/pizza_menu.png");
+}
+
+.bgimgpasta {
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/pasta-menu.jpg");
+}
+
+.bgimgsoup {
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/soup-menu.jpg");
+}
+
+.bgimgsnacks {
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/snack.png");
+}
+
+.bgimgdesserts {
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/desserts.jpg");
+}
+
+.bgimgdrinks {
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/top-view-cocktail-essentials-with-lime-copy-space_23-2148454413.jpg");
+}
+
+.mymargin {
+    margin: 10px 0px;
+}
+
+.mybckrnd {
+    color: white;
+    background-color: #cb6767 !important;
+}
+
+.mybtn:hover {
+    filter: grayscale(0%) !important;
+    background-color: #f02828 !important;
+}
